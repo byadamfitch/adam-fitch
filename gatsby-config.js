@@ -1,8 +1,8 @@
-require("dotenv").config({
+require('dotenv').config({
 	path: `.env`, //`.env.${process.env.NODE_ENV}`
-})
-const website = require("./src/utility/config")
-const pathPrefix = website.pathPrefix === "/" ? "" : website.pathPrefix
+});
+const website = require('./src/utility/config');
+const pathPrefix = website.pathPrefix === '/' ? '' : website.pathPrefix;
 
 module.exports = {
 	pathPrefix: website.pathPrefix,
@@ -22,10 +22,30 @@ module.exports = {
 	},
 	plugins: [
 		{
+			resolve: 'gatsby-source-anchor',
+			options: {
+				rss: 'https://anchor.fm/s/10ad7cac/podcast/rss',
+			},
+		},
+		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
 				name: `images`,
 				path: `${__dirname}/src/media/images`,
+			},
+		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `socialIcons`,
+				path: `${__dirname}/src/media/images/social`,
+			},
+		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `publicationLogos`,
+				path: `${__dirname}/src/media/images/publication`,
 			},
 		},
 		{
@@ -42,9 +62,9 @@ module.exports = {
 		`gatsby-transformer-json`,
 		`gatsby-plugin-styled-components`,
 		{
-			resolve: "gatsby-plugin-netlify-cache",
+			resolve: 'gatsby-plugin-netlify-cache',
 			options: {
-				extraDirsToCache: ["src/media/images"],
+				extraDirsToCache: ['src/media/images'],
 			},
 		},
 		{
@@ -56,18 +76,18 @@ module.exports = {
 				start_url: pathPrefix,
 				background_color: website.backgroundColor,
 				theme_color: website.themeColor,
-				display: "standalone",
+				display: 'standalone',
 				icon: website.favicon,
 			},
 		},
 		//`gatsby-plugin-offline`,
 		{
-			resolve: "gatsby-plugin-web-font-loader",
+			resolve: 'gatsby-plugin-web-font-loader',
 			options: {
 				google: {
-					families: ["Bai Jamjuree:400,700"],
+					families: ['Montserrat:500,700,900'],
 				},
 			},
 		},
 	],
-}
+};

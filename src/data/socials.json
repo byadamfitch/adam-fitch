@@ -1,0 +1,32 @@
+[
+	{
+		"name": "@byadamfitch on twitter",
+		"link": "https://twitter.com/byadamfitch",
+		"image": "../media/images/social/twitter.png"
+	},
+	{
+		"name": "byadamfitch on youtube",
+		"link": "https://www.youtube.com/byadamfitch",
+		"image": "../media/images/social/youtube.png"
+	},
+	{
+		"name": "byadamfitch on facebook",
+		"link": "https://www.facebook.com/byadamfitch",
+		"image": "../media/images/social/facebook.png"
+	},
+	{
+		"name": "@byadamfitch on instagram",
+		"link": "https://www.instagram.com/byadamfitch/",
+		"image": "../media/images/social/instagram.png"
+	},
+	{
+		"name": "byadamfitch on linkedin",
+		"link": "https://www.linkedin.com/in/byadamfitch/",
+		"image": "../media/images/social/linkedin.png"
+	},
+	{
+		"name": "email",
+		"link": "mailto:adamfitch@live.co.uk",
+		"image": "../media/images/social/email.png"
+	}
+]

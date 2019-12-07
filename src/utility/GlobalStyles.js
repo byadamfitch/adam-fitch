@@ -1,29 +1,28 @@
-import { createGlobalStyle } from "styled-components"
-import { setThemeColor, setScaleSize } from "./functions"
-//import "./reset.css"
+import { createGlobalStyle } from 'styled-components';
+import { setThemeColor } from './theme';
 
 const GlobalStyle = createGlobalStyle`
 	:root {
-		${setThemeColor("dark")};
-		${setScaleSize("medium")};
+		${setThemeColor('light')};
+
+			--size-space-tiny: 0.8rem;
+			--size-space-small: 1.6rem;
+			--size-space-medium:2.4rem;
+			--size-space-large: 4rem;
+			--size-space-huge: 8rem;
+
+
+
 		--size-container-content: calc(1200px - 4.8rem);
 		--size-container-edges: 2.4rem;
 
-		--font-weight-normal: 400;
+		--font-weight-normal: 500;
 		--font-weight-medium: 700;
-		--font-weight-bold: 700;
+		--font-weight-bold: 900;
 
 		--border-radius-small: .4rem;
 		--border-radius-medium: 1.6rem;
 		--border-radius-large: 4rem;
-
-		--size-text-p: 2rem;
-		--size-text-h6: 1.4rem;
-		--size-text-h5: 2.4rem;
-		--size-text-h4: 4rem;
-		--size-text-h3: 4rem;
-		--size-text-h2: 5.6rem;
-		--size-text-h1: 7.2rem;
 	}
 
 	* {
@@ -303,7 +302,7 @@ const GlobalStyle = createGlobalStyle`
 
 
 	body{
-		font-family: Bai Jamjuree, Roboto, Helvetica, Segoe UI, -apple-system, BlinkMacSystemFont, sans-serif;
+		font-family: 'Montserrat', Roboto, Helvetica, Segoe UI, -apple-system, BlinkMacSystemFont, sans-serif;
 		font-style: normal;
 		font-weight: var(--font-weight-normal);
 		height: auto;
@@ -337,50 +336,54 @@ const GlobalStyle = createGlobalStyle`
 	h1,h2,h3,h4,h5,h6,p{
 		-webkit-margin-before: 0;
 		-webkit-margin-after: 0;
+		&.highlight{
+			color: var(--color-primary-medium)
+		}
 	}
 	h1,h2,h3,h4,h5,h6{
 		color: var(--color-text-title);
 	}
 	h1 {
-		font-size:  var(--size-text-h1);
+		font-size:  4rem;
 		line-height:  1em;
-		font-weight: var(--font-weight-medium);
+		font-weight: var(--font-weight-bold);
+		text-transform: uppercase;
 		&strong,&b{font-weight: var(--font-weight-bold)}
 		}
 	h2 {
-		font-size:  var(--size-text-h2);
+		font-size:  4rem;
 		line-height:  1em;
-		font-weight: var(--font-weight-normal);
-		&strong,&b{font-weight: var(--font-weight-medium)}
-		}
-	h3 {
-		font-size:  var(--size-text-h3);
-		line-height:  1.1em;
 		font-weight: var(--font-weight-medium);
 		&strong,&b{font-weight: var(--font-weight-bold)}
 		}
-	h4 {
-		font-size:  var(--size-text-h4);
+	h3 {
+		font-size:  4rem;
 		line-height:  1.2em;
 		font-weight: var(--font-weight-normal);
 		&strong,&b{font-weight: var(--font-weight-medium)}
 		}
-	h5 {
-		font-size:  var(--size-text-h5);
-		line-height:  1.3em;
+	h4 {
+		font-size:  3.2rem;
+		line-height:  1.2em;
 		font-weight: var(--font-weight-medium);
 		&strong,&b{font-weight: var(--font-weight-bold)}
 		}
+	h5 {
+		font-size:  3.2rem;
+		line-height:  1.3em;
+		font-weight: var(--font-weight-normal);
+		&strong,&b{font-weight: var(--font-weight-medium)}
+		}
 	h6 {
-		font-size:  var(--size-text-h6);
+		font-size:  1.6rem;
 		line-height:  1.5em;
 		font-weight: var(--font-weight-medium);;
 		&strong,&b{font-weight: var(--font-weight-bold)}
 		letter-spacing: 0.12em;
 		text-transform: uppercase;
 	}
-	p,li,dt,dd{font-size: var(--size-text-p);
-		line-height:  1.4em;
+	p,li,dt,dd{font-size: 2rem;
+		line-height:  1.5em;
 		font-weight: var(--font-weight-normal);
 		color: var(--color-text-content);
 		&strong,&b{font-weight: var(--font-weight-medium)}
@@ -405,6 +408,6 @@ const GlobalStyle = createGlobalStyle`
 
 
 
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;

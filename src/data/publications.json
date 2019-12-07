@@ -1,0 +1,82 @@
+[
+	{
+		"name": "Hitmarker",
+		"link": "https://hitmarkerjobs.com/career-advice",
+		"image": "../media/images/publication/hitmarker-jops.jpg"
+	},
+	{
+		"name": "Esports Insider",
+		"link": "https://esportsinsider.com/author/adam-fitch/",
+		"image": "../media/images/publication/esi.jpg"
+	},
+	{
+		"name": "Dexerto",
+		"link": "https://www.dexerto.com/author/adamfitch",
+		"image": "../media/images/publication/dexerto.jpg"
+	},
+	{
+		"name": "Red Bull Esports",
+		"link": "https://www.redbull.com/int-en/pubg-esports-casting-difficulties-simms-interview",
+		"image": "../media/images/publication/red-bull-esports.jpg"
+	},
+	{
+		"name": "GINX",
+		"link": "https://ginx.tv/author/adam-fitch/",
+		"image": "../media/images/publication/ginx.jpg"
+	},
+	{
+		"name": "Dot Esports",
+		"link": "https://dotesports.com/author/adamfitch",
+		"image": "../media/images/publication/dot-esports.jpg"
+	},
+	{
+		"name": "The Players Lobby",
+		"link": "https://www.theplayerslobby.com/",
+		"image": "../media/images/publication/players-lobby.jpg"
+	},
+	{
+		"name": "Unikrn",
+		"link": "https://news.unikrn.com/author/Adam+Fitch",
+		"image": "../media/images/publication/unikrn.png"
+	},
+	{
+		"name": "Cybersport",
+		"link": "https://cybersport.com/user/315",
+		"image": "../media/images/publication/cybersport.jpg"
+	},
+	{
+		"name": "Inven Global",
+		"link": "https://www.invenglobal.com/author/Adam+Fitch",
+		"image": "../media/images/publication/Inven-Global.jpg"
+	},
+	{
+		"name": "VP Esports",
+		"link": "https://www.vpesports.com/fortnite/fortnites-summer-skirmish-was-a-failure-and-its-not-surprising/",
+		"image": "../media/images/publication/vpesports.jpg"
+	},
+	{
+		"name": "PUBG Esports",
+		"link": "https://pubgesports.eu/en/news",
+		"image": "../media/images/publication/pubg-europe-league.jpg"
+	},
+	{
+		"name": "Hotspawn",
+		"link": "https://www.hotspawn.com/adamfitch/",
+		"image": "../media/images/publication/hotspawn-esports.jpg"
+	},
+	{
+		"name": "Framerate",
+		"link": "https://framerate.gg/shows/framerate-daily-with-buddy-hutton",
+		"image": "../media/images/publication/framerate-gg.png"
+	},
+	{
+		"name": "Esports Edition",
+		"link": "https://esportsedition.com/author/afitch/",
+		"image": "../media/images/publication/esports-edition.jpg"
+	},
+	{
+		"name": "CBR",
+		"link": "https://www.cbr.com/author/afit/",
+		"image": "../media/images/publication/cbr.jpg"
+	}
+]

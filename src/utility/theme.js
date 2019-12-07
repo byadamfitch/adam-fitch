@@ -1,57 +1,70 @@
+import PropTypes from 'prop-types';
+
 export const color = {
 	primary: {
-		light: "rgba(255,133,71,1.0)",
-		medium: "rgba(255,74,38,1.0)",
-		dark: "rgba(184,0,0,1.0)",
-		highlight: "rgba(255,180,150,1.0)",
-		subtle: "rgba(255,74,38,0.32)",
-	},
-	secondary: {
-		light: "rgba(112,255,184,1.0)",
-		medium: "rgba(0,240,140,1.0)",
-		dark: "rgba(0,143,83,1.0)",
-		highlight: "rgba(155,255,210,1.0)",
-		subtle: "rgba(0,255,149,0.32)",
+		light: 'rgb(255,245,155)',
+		medium: 'rgb(255,235,0)',
+		dark: 'rgb(200,155,0)',
 	},
 	mono: {
-		lightest: "rgba(245,255,252,1.0)",
-		lighter: "rgba(188,204,199,1.0)",
-		light: "rgba(141,153,149,1.0)",
-		dark: "rgba(29,38,35,1.0)",
-		darker: "rgba(19,25,23,1.0)",
-		darkest: "rgba(10,13,12,1.0)",
+		lightest: 'rgb(255,255,255)',
+		lighter: 'rgb(200,200,200)',
+		light: 'rgb(155,155,155)',
+		dark: 'rgb(40,40,40)',
+		darker: 'rgb(20,20,20)',
+		darkest: 'rgb(0,0,0)',
 	},
-}
+};
 
-export const size = {
-	small: ["0.4rem", "0.8rem", "1.2rem", "1.6rem", "2.4rem"],
-	medium: ["0.8rem", "1.6rem", "2.4rem", "4rem", "8rem"],
-	large: ["1.6rem", "3.2rem", "4rem", "8rem", "12rem"],
-}
+export function setThemeColor(s) {
+	switch (s) {
+		case 'light':
+			return `
+			--color-primary-light: ${color.primary.light};
+			--color-primary-medium: ${color.primary.medium};
+			--color-primary-dark: ${color.primary.dark};
 
-export const typescale = {
-	small: {
-		h6: { size: 1.2, line: 2.25 },
-		p: { size: 1.6, line: 1.75 },
-		h5: { size: 2, line: 1.6 },
-		h3: { size: 2.4, line: 1.4 },
-		h2: { size: 3.2, line: 1.3 },
-		h1: { size: 4, line: 1.2 },
-	},
-	medium: [
-		{ size: 1.6, line: 2 },
-		{ size: 2, line: 1.6 },
-		{ size: 2.4, line: 1.5 },
-		{ size: 3.2, line: 1.3 },
-		{ size: 4.8, line: 1.2 },
-		{ size: 5.6, line: 1.1 },
-	],
-	large: [
-		{ size: 2, line: 1.75 },
-		{ size: 2.4, line: 1.5 },
-		{ size: 3.6, line: 1.5 },
-		{ size: 4.8, line: 1.2 },
-		{ size: 5.6, line: 1.1 },
-		{ size: 8, line: 1.1 },
-	],
+			--color-link-resting:  ${color.primary.dark};
+			--color-link-hover:  ${color.primary.medium};
+
+			--color-text-title: ${color.mono.darkest};
+			--color-text-content: ${color.mono.dark};
+
+			--color-level-background: ${color.mono.lightest};
+			--color-level-accent: ${color.mono.light};
+
+			--color-level-1: ${color.mono.lightest};
+			--color-level-2: ${color.mono.lighter};
+			--color-level-3: ${color.mono.light};
+			--color-level-4: ${color.mono.dark};
+			--color-level-5: ${color.mono.darker};
+			--color-level-6: ${color.mono.darkest};
+		`;
+		case 'dark':
+		default:
+			return `
+			--color-primary-light: ${color.primary.light};
+			--color-primary-medium: ${color.primary.medium};
+			--color-primary-dark: ${color.primary.dark};
+
+			--color-link-resting:  ${color.primary.light};
+			--color-link-hover:  ${color.primary.medium};
+
+			--color-text-title: ${color.mono.lightest};
+			--color-text-content: ${color.mono.light};
+
+			--color-level-background: ${color.mono.darkest};
+			--color-level-accent: ${color.mono.dark};
+
+			--color-level-1: ${color.mono.darkest};
+			--color-level-2: ${color.mono.darker};
+			--color-level-3: ${color.mono.dark};
+			--color-level-4: ${color.mono.light};
+			--color-level-5: ${color.mono.lighter};
+			--color-level-6: ${color.mono.lightest};
+		`;
+	}
 }
+setThemeColor.propTypes = {
+	s: PropTypes.oneOf(['switch', 'switch-invert', 'invert', 'default']).isRequired,
+};
