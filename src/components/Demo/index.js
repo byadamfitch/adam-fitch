@@ -1,9 +1,6 @@
-import React from "react"
-import { Container } from "../Page"
-import Blockquote from "../Module/Quote"
-import Image from "../Module/Image"
-import YouTube from "../Module/YouTube"
-import { Input, Option, Dropdown } from "../Form"
+import React from 'react';
+import { Container } from '../Page';
+import Blockquote from '../Module/Quote';
 
 const Demo = () => (
 	<main role="main">
@@ -52,28 +49,6 @@ const Demo = () => (
 						paragraph consists of one or more sentences. Though not required by the syntax of any language,
 						paragraphs are usually an expected part of formal writing, used to organize longer prose.
 					</p>
-				</div>
-				<footer>
-					<p>
-						<a href="#top">[Top]</a>
-					</p>
-				</footer>
-			</article>
-			<article id="text__blockquotes">
-				<header style={{ padding: `4rem 0` }}>
-					<h3>Blockquotes</h3>
-				</header>
-				<div>
-					<Blockquote citeText="Said no one, ever." citeUrl={"."}>
-						<p>
-							A block quotation (also known as a long quotation or extract) is a quotation in a written
-							document, that is set off from the main text as a paragraph, or block of text.
-						</p>
-						<p>
-							It is typically distinguished visually using indentation and a different typeface or smaller
-							size quotation. It may or may not include a citation, usually placed at the bottom.
-						</p>
-					</Blockquote>
 				</div>
 				<footer>
 					<p>
@@ -239,7 +214,7 @@ const Demo = () => (
 					<pre>
 						P R E F O R M A T T E D T E X T ! " # $ % &amp; ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; &lt; =
 						&gt; ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b c d e f g h i j k l
-						m n o p q r s t u v w x y z | ~{" "}
+						m n o p q r s t u v w x y z | ~{' '}
 					</pre>
 				</div>
 				<footer>
@@ -324,37 +299,6 @@ const Demo = () => (
 			<header style={{ padding: `4rem 0` }}>
 				<h1>Embedded content</h1>
 			</header>
-			<article id="embedded__images">
-				<header style={{ padding: `4rem 0` }}>
-					<h2>Images</h2>
-				</header>
-				<div>
-					<h3>
-						No <code>&lt;figure&gt;</code> element
-					</h3>
-					<p>
-						<Image src="http://placekitten.com/200/287" alt="Description of this visual thing" />
-					</p>
-					<h3>
-						Wrapped in a <code>&lt;figure&gt;</code> element, no <code>&lt;figcaption&gt;</code>
-					</h3>
-					<Image src="http://placekitten.com/200/286" alt="Description of this visual thing" caption="" />
-
-					<h3>
-						Wrapped in a <code>&lt;figure&gt;</code> element, with a <code>&lt;figcaption&gt;</code>
-					</h3>
-					<Image
-						src="http://placekitten.com/200/138"
-						alt="Description of this visual thing"
-						caption="Here is a caption for this image."
-					/>
-				</div>
-				<footer>
-					<p>
-						<a href="#top">[Top]</a>
-					</p>
-				</footer>
-			</article>
 			<article id="embedded__svg">
 				<header style={{ padding: `4rem 0` }}>
 					<h2>Inline SVG</h2>
@@ -370,124 +314,11 @@ const Demo = () => (
 					</p>
 				</footer>
 			</article>
-			<article id="embedded__video">
-				<header style={{ padding: `4rem 0` }}>
-					<h2>Inline Video</h2>
-				</header>
-				<YouTube url="https://www.youtube.com/watch?v=8PA3Fg3oqgk&t=8s" />
-				<footer>
-					<p>
-						<a href="#top">[Top]</a>
-					</p>
-				</footer>
-			</article>
-		</Container>
-
-		<Container isRestricted isRichText as="section" anchor="forms">
-			<header style={{ padding: `4rem 0` }}>
-				<h1>Form elements</h1>
-			</header>
-			<form>
-				<fieldset id="forms__input">
-					<legend>Input fields</legend>
-					<Input label="Text Input" type="text" />
-					<Input label="Password" type="password" placeholder="Type your Password" />
-					<Input label="Web Address" type="url" placeholder="http://yoursite.com" />
-					<Input label="Address" type="email" placeholder="name@email.com" />
-					<Input label="Phone Number" type="tel" placeholder="(999) 999-9999" />
-					<Input label="Search" type="search" placeholder="Enter Search Term" />
-					<Input label="Number Input" type="number" placeholder="Enter a Number" />
-					<Input label="Error Example" type="text" placeholder="Invalid Text Input" valid={false} />
-					<Input label="Valid Example" type="text" placeholder="Valid Text Input" valid={true} />
-				</fieldset>
-				<p>
-					<a href="#top">[Top]</a>
-				</p>
-				<fieldset id="forms__select">
-					<legend>Select menus</legend>
-					<Dropdown
-						label="Select"
-						placeholder="Select an option..."
-						options={["Option A", "Option B", "Option C"]}
-					/>
-				</fieldset>
-				<p>
-					<a href="#top">[Top]</a>
-				</p>
-				<fieldset id="forms__checkbox">
-					<legend>Checkboxes</legend>
-					<ul>
-						<li>
-							<Option group="checkboxes" type="checkbox" label="Choice A" />
-						</li>
-						<li>
-							<Option group="checkboxes" type="checkbox" label="Choice B" />
-						</li>
-						<li>
-							<Option group="checkboxes" type="checkbox" label="Choice C" />
-						</li>
-					</ul>
-				</fieldset>
-				<p>
-					<a href="#top">[Top]</a>
-				</p>
-				<fieldset id="forms__radio">
-					<legend>Radio buttons</legend>
-					<ul>
-						<li>
-							<Option group="radios" type="radio" label="Option A" />
-						</li>
-						<li>
-							<Option group="radios" type="radio" label="Option B" />
-						</li>
-						<li>
-							<Option group="radios" type="radio" label="Option C" />
-						</li>
-					</ul>
-				</fieldset>
-				<p>
-					<a href="#top">[Top]</a>
-				</p>
-				<fieldset id="forms__textareas">
-					<legend>Textareas</legend>
-					<Input label="Textarea" type="textarea" placeholder="Enter your message here" />
-				</fieldset>
-				<p>
-					<a href="#top">[Top]</a>
-				</p>
-				<fieldset id="forms__html5">
-					<legend>HTML5 inputs</legend>
-					<Input label="Color input" type="color" placeholder="#123456" />
-					<Input label="Number input" type="number" placeholder="5" options={{ min: 0, max: 10 }} />
-					<Input label="Range input" type="range" placeholder="10" />
-					<Input label="Date input" type="date" placeholder="1990-01-01" />
-					<Input label="Month input" type="month" placeholder="1970-01" />
-					<Input label="Week input" type="week" placeholder="1970-W01" />
-					<Input label="Date  & Time input" type="datetime" placeholder="1970-01-01T00:00:00Z" />
-					<Input label="Date & Time local input" type="datetime-local" placeholder="1970-01-01T00:00" />
-					<Input label="Color input" type="color" placeholder="123456" />
-				</fieldset>
-				<p>
-					<a href="#top">[Top]</a>
-				</p>
-				<fieldset id="forms__action">
-					<legend>Action buttons</legend>
-					<p>
-						<input type="submit" defaultValue="<input type=submit>" />
-						<input type="button" defaultValue="<input type=button>" />
-						<input type="reset" defaultValue="<input type=reset>" />
-						<input type="submit" defaultValue="<input disabled>" disabled />
-					</p>
-				</fieldset>
-				<p>
-					<a href="#top">[Top]</a>
-				</p>
-			</form>
 		</Container>
 	</main>
-)
+);
 
-export default Demo
+export default Demo;
 
 // DISABLED
 /*
