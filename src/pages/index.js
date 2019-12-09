@@ -9,15 +9,15 @@ import ListPodcasts from '../components/ListPodcasts';
 
 const IndexPage = ({ data }) => {
 	const {
-		author,
-		creator,
+		//author,
+		//creator,
 		title: podcastTitle,
 		description: podcastDescription,
 		image,
-		link,
-		feedUrl,
+		//link,
+		//feedUrl,
 		lastBuildDate,
-		id,
+		//id,
 	} = data.anchorPodcast;
 
 	return (
@@ -26,6 +26,8 @@ const IndexPage = ({ data }) => {
 				title="Adam Fitch"
 				description="Adam Fitch is an English esports journalist, reporter, and editor. 'Reporter of the Year' at the UK Esports Awards in 2019"
 				keywords={[`adam`, `fitch`, `Editor`, `journalist`, `freelance`]}
+				banner={image.url}
+				date={lastBuildDate}
 			/>
 
 			<Section as="main">

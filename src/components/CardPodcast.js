@@ -88,7 +88,12 @@ const Podcast = ({
 	number,
 }) => (
 	<PodcastCard>
-		<a href={link} target="_blank" rel="noopener noreferrer">
+		<a
+			href={link}
+			target="_blank"
+			rel="noopener noreferrer"
+			aria-label={`Season ${itunes.season}, episode ${itunes.episode}: ${title}`}
+		>
 			<EpisodeMeta as="header">
 				<h4 className="episodeTitle">
 					<span>#{number}</span> {title}

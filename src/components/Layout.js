@@ -104,7 +104,7 @@ const Layout = ({ children, theme, data }) => (
 
 						<ul className="listof-socialmedia">
 							{data.allSocialsJson.edges.map(({ node }) => (
-								<SocialLink {...node} />
+								<SocialLink {...node} key={node.name} />
 							))}
 						</ul>
 					</Header>
