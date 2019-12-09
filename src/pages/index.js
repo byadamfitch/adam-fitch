@@ -23,18 +23,9 @@ const IndexPage = ({ data }) => {
 	return (
 		<Layout theme={null}>
 			<SEO
-				title="OllieJT"
-				keywords={[
-					`portfolio`,
-					`ollie`,
-					`taylor`,
-					`olliejt`,
-					`theolliejt`,
-					`designer`,
-					`product designer`,
-					`esports`,
-					`gaming`,
-				]}
+				title="Adam Fitch"
+				description="Adam Fitch is an English esports journalist, reporter, and editor. 'Reporter of the Year' at the UK Esports Awards in 2019"
+				keywords={[`adam`, `fitch`, `Editor`, `journalist`, `freelance`]}
 			/>
 
 			<Section as="main">
