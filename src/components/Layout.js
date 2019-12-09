@@ -64,6 +64,13 @@ const Header = styled.header`
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
+		padding: 0 1.6rem;
+	}
+	@media (max-width: 750px) {
+		padding: 0;
+		.banner {
+			border-radius: 0;
+		}
 	}
 `;
 

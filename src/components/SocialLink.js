@@ -4,6 +4,10 @@ import styled from 'styled-components';
 
 const SocialLinkButton = styled.li`
 	a {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		padding: 1.6rem;
 		background-color: var(--color-primary-medium);
 		border: 1px solid var(--color-level-6);
@@ -27,6 +31,12 @@ const SocialLinkButton = styled.li`
 	&:last-of-type a {
 		border-top-right-radius: 0.4rem;
 		border-bottom-right-radius: 0.4rem;
+	}
+	@media (max-width: 440px) {
+		flex-grow: 1;
+		a {
+			padding: 2rem 0.8rem;
+		}
 	}
 `;
 

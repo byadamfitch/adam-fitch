@@ -375,11 +375,11 @@ const GlobalStyle = createGlobalStyle`
 		&strong,&b{font-weight: var(--font-weight-medium)}
 		}
 	h6 {
-		font-size:  1.6rem;
+		font-size:  1.4rem;
 		line-height:  1.5em;
 		font-weight: var(--font-weight-medium);;
 		&strong,&b{font-weight: var(--font-weight-bold)}
-		letter-spacing: 0.12em;
+		letter-spacing: 0.08em;
 		text-transform: uppercase;
 	}
 	p,li,dt,dd{font-size: 2rem;
