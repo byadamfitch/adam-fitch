@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container } from '../Page';
-import Blockquote from '../Module/Quote';
 
 const Demo = () => (
 	<main role="main">
