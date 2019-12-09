@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import GlobalStyle from '../utility/GlobalStyles';
 import { setThemeColor } from '../utility/theme';
-import { Menu, Footer } from './Page';
 import SocialLink from './SocialLink';
 import Img from 'gatsby-image';
 
@@ -20,16 +19,6 @@ const PageContainer = styled.div`
 		${setThemeColor('dark')};
 		background-color: var(--color-level-background);
 	}
-`;
-const ContentContainer = styled.main`
-	display: flex;
-	width: 100%;
-	height: auto;
-	flex-direction: column;
-	align-items: stretch;
-	justify-content: flex-start;
-	flex-grow: 1;
-	flex-shrink: 0;
 `;
 
 const Header = styled.header`
@@ -106,7 +95,6 @@ const Layout = ({ children, theme, data }) => (
 			return (
 				<PageContainer theme={theme}>
 					<GlobalStyle />
-					{/* <Menu /> */}
 					<Header>
 						<Img
 							className="banner"
@@ -121,8 +109,6 @@ const Layout = ({ children, theme, data }) => (
 						</ul>
 					</Header>
 					{children}
-					{/* <ContentContainer>{children}</ContentContainer> */}
-					{/* <Footer /> */}
 				</PageContainer>
 			);
 		}}

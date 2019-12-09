@@ -1,5 +1,4 @@
 import React from 'react';
-import Img from 'gatsby-image';
 import styled from 'styled-components';
 import { secondsToHms } from '../utility/functions';
 
@@ -89,7 +88,7 @@ const Podcast = ({
 	number,
 }) => (
 	<PodcastCard>
-		<a href={link} target="_blank">
+		<a href={link} target="_blank" rel="noopener noreferrer">
 			<EpisodeMeta as="header">
 				<h4 className="episodeTitle">
 					<span>#{number}</span> {title}

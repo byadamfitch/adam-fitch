@@ -14,7 +14,7 @@ const PublicationLinkButton = styled.li`
 
 const PublicationLink = ({ name, link, image }) => (
 	<PublicationLinkButton>
-		<a href={link} target="_blank">
+		<a href={link} target="_blank" rel="noopener noreferrer">
 			<Img className="icon" fixed={image.childImageSharp.fixed} alt={name} />
 		</a>
 	</PublicationLinkButton>

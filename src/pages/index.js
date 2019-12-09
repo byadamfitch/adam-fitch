@@ -2,8 +2,6 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
-import styled from 'styled-components';
-import { setThemeColor } from '../utility/theme';
 import RichText from '../components/RichText';
 import Section from '../components/Section';
 import ListPublications from '../components/ListPublications';
@@ -19,7 +17,6 @@ const IndexPage = ({ data }) => {
 		link,
 		feedUrl,
 		lastBuildDate,
-		items: podcastEpisodes,
 		id,
 	} = data.anchorPodcast;
 
