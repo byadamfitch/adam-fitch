@@ -32,7 +32,7 @@ const IndexPage = ({ data }) => {
 				<RichText>
 					<h1>Adam Fitch</h1>
 					<h3>
-						<em>Editor</em> at esports insider, freelance esports <em>journalist</em>
+						<em>Editor</em> at Esports Insider, freelance esports <em>journalist</em>
 					</h3>
 					<p>
 						Adam Fitch is an English esports journalist, reporter, and editor. Writing for publications such
