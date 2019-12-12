@@ -96,7 +96,7 @@ const Podcast = ({
 		>
 			<EpisodeMeta as="header">
 				<h4 className="episodeTitle">
-					<span>#{number}</span> {title}
+						<span>#{itunes.episode}</span> {title}
 				</h4>
 				<h6>
 					{date} {/* ({dateRel}) */}
