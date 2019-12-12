@@ -58,7 +58,7 @@ function SEO({ description, lang, meta, keywords, title, banner }) {
 				},
 				{
 					property: `og:image`,
-					content: banner,
+					content: banner || "https://byadamfitch.com/static/d411d66b33f644e5a9c73030dc8aaed9/c077c/adam_fitch-esports_awards_winner.jpg",
 				},
 				{
 					name: `twitter:card`,
