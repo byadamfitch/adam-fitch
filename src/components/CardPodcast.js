@@ -8,6 +8,7 @@ const PodcastCard = styled.li`
 	padding: 0.8rem;
 	margin: 0 -0.8rem;
 	a {
+		cursor: pointer;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
