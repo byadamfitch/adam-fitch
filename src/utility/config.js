@@ -10,6 +10,13 @@ module.exports = {
 	logo: 'src/media/images/manifest-icon.png', // Used for SEO
 	ogLanguage: 'en_US', // Facebook Language
 
+	<meta property="og:type" content="profile">
+<meta property="og:title" content="Adam Fitch">
+<meta property="og:url" content="https://byadamfitch.com">
+<meta property="og:image" content="https://byadamfitch.com/static/d411d66b33f644e5a9c73030dc8aaed9/e6eb0/adam_fitch-esports_awards_winner.jpg">
+<meta property="profile:first_name" content="Adam">
+<meta property="profile:last_name" content="Fitch">
+	
 	// JSONLD / Manifest
 	favicon: 'src/media/images/favicon.png', // Used for manifest favicon generation
 	shortName: 'AdamFitch', // shortname for manifest. MUST be shorter than 12 characters
@@ -18,8 +25,8 @@ module.exports = {
 	backgroundColor: '#000000',
 
 	twitter: '@byadamfitch', // Twitter Username
-	facebook: '', // Facebook Site Name
-	googleAnalyticsID: 'UA-00000000-0',
+	facebook: 'byadamfitch', // Facebook Site Name
+	googleAnalyticsID: 'UA-80695103-1',
 
 	skipNavId: 'reach-skip-nav', // ID for the "Skip to content" a11y feature
 };
